@@ -35,4 +35,3 @@ branch basic-property have record the basic property which includes
 1. 生命周期
 2. 样式
 3. 动态属性
-
