@@ -30,3 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [ngClass] [ngStyle]
 [ngClass]="{'active':ture,}"
 [ngStyle]="{'color': red, 'font-size':20px}" 内联样式
+
+branch basic-property have record the basic property which includes
+1. 生命周期
+2. 样式
+3. 动态属性
+
