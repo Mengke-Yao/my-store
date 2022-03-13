@@ -1,0 +1,17 @@
+<ul [ngStyle]="{'background-color':backgroundColor}">
+  <li *ngFor="let menu of menus; let i = index; let odd=odd; let even=even">
+    <a [class.active]="i==selectedIndex" href="" (click)="clickEvent(i)">{{menu.title}}</a>
+    <div [ngStyle]="{'color': i===selectedIndex? 'red':'blue'}" *ngIf="i===selectedIndex else elseTemp" class="tab-bottom"></div>
+    <div [ngClass]="{'red-color': odd}">
+      好的
+    </div>
+  </li>
+  <ng-template #elseTemp>
+    <div>hi</div>
+  </ng-template>
+  <!-- #后面是给模板或者DOM元素气的一个引用名字, 以便在组件或者模板中进行引用 -->
+  <div #helloDiv>hello</div>
+</ul>
+
+<ng-content></ng-content>
+

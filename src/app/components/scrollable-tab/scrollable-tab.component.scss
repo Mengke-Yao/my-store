@@ -1,0 +1,29 @@
+ul{
+  padding:0 10px;
+  display: flex;
+  
+  li{
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    white-space: nowrap;
+    a{
+      text-decoration: none;
+    }
+    .active{
+      color: red;
+    }
+    .first{
+      color: green;
+    }
+    .tab-bottom{
+      margin-top: 3px;
+      width: 100%;
+      height: 2px;
+      background-color: pink;
+    }
+  }
+  .red-color{
+    color: red;
+  }
+}
